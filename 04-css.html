@@ -3,24 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 盒模型，背景，文字排版</title>
+    <title>CSS 盒模型、背景、文字排版</title>
     <style>
         body{
-            margin: 0;
+            width: 570px;
+            margin: 0 auto;
             padding: 0;
         }
         div {
+            background-image: linear-gradient(45deg,#e66465,#9198);
             width: 200px;
             height: 200px;
-            margin: 20px 0 10px 40px;
-            border: 10px black solid;
+            margin-top: 100px;
+            margin-bottom: 4em;
+            margin-left: auto;
+            margin-right: auto;
+
+            border:dashed 1px rgb(232, 224, 32)
             padding: 20px;
+            border-radius: 10px 20px;
+            box-shadow: 3px 3px 10px #ccc;
+        }
+        div p {
+        margin: 0;
+        line-height: 200px;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 900;
+        color: paleturquoise;
+        font-family: "Bernard MT";
+        }
+        .text{
+        text-indent: 2em;
+        line-height: 1.7;
+        font-family: "方正隶书简体";
+        font-size: 32px;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: 1px;
+        }
+        span {
+        text-decoration: red wavy underline;
+        background-color: #e66465;
         }
     </style>
 </head>
 <body>
     <div>
-        <p>2023</p>
+        <p>小石潭记</p>
     </div>
+    <p class="text">
+    从小丘西行百二十步，隔篁竹，闻水声，如鸣佩环，心乐之。伐竹取道，下见小潭，水尤清洌。全石以为底，近岸，卷石底以出，为坻，为屿，为嵁，为岩。青树翠蔓，蒙络摇缀，参差披拂。
+    <span>潭中鱼可百许头，皆若空游无所依。</span>日光下彻，影布石上，佁然不动；俶尔远逝，往来翕忽。似与游者相乐。
+    </p>
 </body>
 </html>
